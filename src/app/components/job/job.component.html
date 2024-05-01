@@ -1,0 +1,10 @@
+<div class="jobFrame" TextDesign>
+    <p><span TextDesign textWeight="bold">title:</span> {{jobsDetails?.jobTitle}}</p>
+    <p><span TextDesign textWeight="bold">field:</span>{{getFields(jobsDetails?.jobField)}}</p>
+    <p><span TextDesign textWeight="bold">area:</span>{{jobsDetails?.area}}</p>
+    <p><span TextDesign textWeight="bold">scope of hours:</span>{{jobsDetails?.scopeOfHours}}</p>
+    <button (click)="changeShowDetails()">{{showDetails?'hide':'show'}} details</button>
+    <br *ngIf="!showDetails">
+    <p *ngIf="showDetails" TextDesign textSize="14px"><span TextDesign textWeight="bold" textSize="14px">requirements:</span>{{jobsDetails?.requirements}} <br><span TextDesign textWeight="bold" textSize="14px">working from home?</span> {{jobsDetails?.workFromHome}}</p>
+    <button (click)="sendCv()">send CV</button>
+</div>

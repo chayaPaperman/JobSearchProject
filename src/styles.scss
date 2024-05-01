@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: #b3b3b3;
+    // display: flex;
+    //justify-content: center;
+    margin-top: 200px;
+    font-family: Cascadia Mono Light;
+}
+
+.pink {
+    color: #de7e80;
+}
+
+app-jobs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}

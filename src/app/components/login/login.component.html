@@ -1,0 +1,16 @@
+<div class="flex">
+
+    <form (submit)="contact()" class="color form">
+        <div>
+            <label for="user_name">name:</label>
+            <input type="text" name="user_name" [(ngModel)]="userName">
+        </div>
+        <div>
+            <label for="password">password:</label>
+            <input type=" text " name="password" [(ngModel)]="userPassword">
+            <p TextDesign textColor="red" textSize="10px">{{passwordValidation}}</p>
+        </div>
+        <input type="submit" value="send">
+    </form>
+
+</div>
